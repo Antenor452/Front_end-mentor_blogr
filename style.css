@@ -93,14 +93,32 @@ li .dropdown-content a {
   
 }
 .btn{
-    padding: 6px 24px;
+    padding: 8px 24px;
     border-radius:25px;
+    border: none;
     /* border: 1px solid white; */
 }
-.btn:hover{
+.login-btn:hover ,.signup-btn:hover{
  background-color:rgba(255, 255, 255, 0.4) ;
 
 }
+.start{
+    color: white;
+    background-color:rgba(255, 255, 255, 0.2);
+}
+.learn{
+   color:hsl(353, 100%, 62%) ;
+   background-color:rgba(255, 255, 255, 0.8);
+}
+.learn:hover,.start:hover{
+   cursor: pointer;
+}
+.learn:hover{
+    color: rgba(255, 255, 255, 0.8);
+    background-color:hsl(353, 100%, 62%) ;
+}
+
+
 /* Fonts */
 .homelink{
     font-size: 1.5rem;
