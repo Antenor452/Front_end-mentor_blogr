@@ -1,136 +1,141 @@
 /* Imports */
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400&family=Roboto&family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;400&family=Roboto&family=Ubuntu:wght@400;500;700&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family:'Ubuntu', sans-serif;;
+body {
+  font-family: "Ubuntu", sans-serif;
 }
-.landing-page{
-    height: 70vh;
-    background-image: linear-gradient(to right,hsl(13, 100%, 72%),hsl(353, 100%, 62%));
-    color: white;
-}
-Nav{
-    padding-top: 2rem;
-    display: flex;
-   
-    justify-content: space-between;
-   
-}
-Nav ul{
-    list-style: none;
-    display: flex;
-    
-
-}
- .dropdown-btn{
-   background-color:transparent;
-   border: none;
-   color: white;
-   font-size: 1rem;
-
- 
-}
-
- .dropdown{
-    position: relative;
-    display: inline-block;
-    margin: 12px 18px;
- 
-}
-
- .dropdown-content{
-    margin-top: 20px;
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px; 
-}
-li .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown:hover .dropdown-content{
-    display: block;
-
-}
-.dropdown:hover .dropdown-btn{
-    text-decoration: underline;
-}
-.homepage{
-   
-   position:absolute;
-   bottom: 50%;
-   left: 50%;
-   transform: translate(-50%,-50%);
-   justify-content: center;
-   text-align: center;
-   align-items: center;
-}
-
-
-.signup-btn{
-    background: transparent;
-    border: none;
-    color: white;
-    font-family: 'Ubuntu',sans-serif;
-    font-size: 1rem;
-}
-
-.login-btn{
-    background: transparent;
-    border: none;
-    color: white;
-    font-family: 'Ubuntu',sans-serif;
-    font-size: 1rem;
+.landing-page {
+  height: 70vh;
+  background-image: url('./images/bg-pattern-intro-desktop.svg'),
+  linear-gradient(
+    to right,
+    hsl(13, 100%, 72%),
+    hsl(353, 100%, 62%)
+  )
+  ;
+  background-position: 18% center ;
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: white;
+  border-bottom-left-radius: 150px;
   
 }
-.btn{
-    padding: 8px 24px;
-    border-radius:25px;
-    border: none;
-    /* border: 1px solid white; */
-}
-.login-btn:hover ,.signup-btn:hover{
- background-color:rgba(255, 255, 255, 0.4) ;
 
+Nav {
+  padding-top: 5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  display: flex;
+
+  justify-content: space-between;
 }
-.start{
-    color: white;
-    background-color:rgba(255, 255, 255, 0.2);
+Nav ul {
+  list-style: none;
+  display: flex;
 }
-.learn{
-   color:hsl(353, 100%, 62%) ;
-   background-color:rgba(255, 255, 255, 0.8);
-}
-.learn:hover,.start:hover{
-   cursor: pointer;
-}
-.learn:hover{
-    color: rgba(255, 255, 255, 0.8);
-    background-color:hsl(353, 100%, 62%) ;
+.dropdown-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 12px 18px;
+}
+
+.dropdown-content {
+  margin-top: 20px;
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+}
+li .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropdown-btn {
+  text-decoration: underline;
+}
+.homepage {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.signup-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+}
+
+.login-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+}
+.btn {
+  padding: 8px 24px;
+  border-radius: 25px;
+  border: none;
+  /* border: 1px solid white; */
+}
+.login-btn:hover,
+.signup-btn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.start {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.learn {
+  color: hsl(353, 100%, 62%);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.learn:hover,
+.start:hover {
+  cursor: pointer;
+}
+.learn:hover {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: hsl(353, 100%, 62%);
+}
 
 /* Fonts */
-.homelink{
-    font-size: 1.5rem;
+.homelink {
+  font-size: 1.5rem;
 }
-.landing-text-big{
-    font-family:'Overpass', sans-serif;
-    font-size: 3rem;
-    display: block;
-   
+.landing-text-big {
+  font-family: "Overpass", sans-serif;
+  font-size: 3rem;
+  display: block;
 }
-.landing-text-small{
-    font-family:'Overpass', sans-serif;
-    font-size: 1rem;
-    display: block;
+.landing-text-small {
+  font-family: "Overpass", sans-serif;
+  font-size: 1rem;
+  display: block;
 }
