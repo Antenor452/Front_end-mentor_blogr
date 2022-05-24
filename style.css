@@ -8,9 +8,11 @@
 }
 body {
   font-family: "Ubuntu", sans-serif;
+  position:static;
   /* overflow-x: hidden; */
 }
 .landing-page {
+  width:100%;
   height: 70vh;
   background-image: url("./images/bg-pattern-intro-desktop.svg"),
     linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
@@ -76,6 +78,7 @@ li .dropdown-content a {
   justify-content: center;
   text-align: center;
   align-items: center;
+  border:1px solid black
 }
 
 .signup-btn {
@@ -222,10 +225,27 @@ article p {
 .landing-text-big {
   font-family: "Overpass", sans-serif;
   font-size: 3rem;
-  display: block;
+  display:block;
+  text-align: center;
+ 
 }
 .landing-text-small {
   font-family: "Overpass", sans-serif;
   font-size: 1rem;
   display: block;
+}
+@media only screen and (max-width:1300px) {
+  .homepage{
+    position: relative;
+    top: 50%;
+  }
+  nav:not(:first-child){
+    display: none;
+  }
+  .landing-text-big{
+    font-size:2rem;
+  }
+  .landing-text-small{
+    font-size: small;
+  }
 }
